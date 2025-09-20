@@ -7,7 +7,7 @@ export default function Page() {
     const calculateVat = async () => {
         const input = document.querySelector('input');
         const amount = parseFloat(input.value);
-        const response = await fetch('/api/vat', {
+        const response = await fetch('/app/app1/api/vat', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
